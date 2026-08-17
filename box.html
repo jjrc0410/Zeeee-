@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #eee;
+      height: 100vh;
+      margin: 0;
+    }
+    .yinying{
+    box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -5px rgba(0, 0, 0, 0.20);
+    }
+    .flex {
+      display: flex;
+    }
+    .baise {
+      background-color: white;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .mg {
+      margin: 8px;
+    }
+    .daohang{height:100px;
+    color:#666;
+  padding:5px;
+  border-bottom:1px solid #999;
+font-size:20px;
+}
+@media (max-width: 768px) {
+  .cebianlan{display:none}
+  .neirong{flex-direction:column}
+  .shujuqu{flex-direction:column}
+  .youqu{margin-left:8px;}
+  .shuju{margin:0 0 8px;
+  flex:auto}
+}
+  </style>
+  <body class="flex">
+    <!--侧边栏 -->
+    <div style="width: 200px;z-index: 1;height: 100%;" class="baise mg yinying cebianlan">
+        <!-- logo -->
+        <div style="height: 80px;padding: 10px;align-items: center;justify-content: center;border-bottom: 1px solid #999;" class="flex">
+            <img src="https://i.imgs.ovh/2026/07/30/68d4825e504cd230fab33b88c20dc9d3.png" alt="logo" style="height: 80px;width: 80px;padding: 8px;">
+        <div style="margin-left:10px">ZEEEE</div>
+      </div>
+      <!-- 导航栏 -->
+       <div class="flex1">
+        <div class="daohang">导航1</div>
+        <div class="daohang">导航2</div>
+        <div class="daohang">导航3</div>
+        <div class="daohang">导航4</div>
+        <div class="daohang">导航5</div>
+        <div class="daohang">导航6</div>
+        <div class="daohang">导航7</div>
+       </div>
+    </div>
+
+    <!-- 主内容区 -->
+    <div class="flex1 flex column mg">
+      <!-- 头部 -->
+      <div style="height: 80px;z-index: 1;" class="baise column yinying"></div> 
+
+      <!-- 身体 -->
+    <div class="flex flex1 neirong" style="overflow: auto">
+        <!-- 左侧内容 -->
+         <div style="flex:3" class="flex column">
+            <!-- 数据区 -->
+            <div class="flex shujuqu">
+                <!-- 数据1 -->
+                <div style="height:100px" class="flex1 baise mg yinying "></div> 
+                <!-- 数据2 -->
+                <div style="height:100px" class="flex1 baise mg yinying "></div>
+                <!-- 数据3 -->
+                <div style="height:100px" class="flex1 baise mg yinying "></div>
+                <!-- 数据4 -->
+                <div style="height:100px" class="flex1 baise mg yinying "></div>
+            </div>  
+            
+            <!-- 列表区 --> 
+                <div class="column flex">
+                    <!-- 列表1 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表1</div>
+                    <!-- 列表2 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表2</div>
+                    <!-- 列表3 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表3</div>
+                    <!-- 列表4 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表4</div>
+                    <!-- 列表5 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表5</div>
+                    <!-- 列表6 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表6</div>
+                    <!-- 列表7 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表7</div>
+                    <!-- 列表8 -->
+                    <div class="baise mg yinying shuju" style="height:160px">列表8</div>
+                </div>
+         </div>
+
+            <!-- 右侧内容 -->
+             <div style="flex:1" class="cebianlan" >
+            <!-- 提示区 -->
+             <div style="height:150px" class="baise mg yinying"></div>
+            <!-- 消息区 -->
+             <div style="height:300px" class="baise mg yinying"></div>
+            </div>
+
+             
+  </body>
+</html>
